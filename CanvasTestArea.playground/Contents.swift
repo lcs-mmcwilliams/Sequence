@@ -21,21 +21,23 @@ import Cocoa
 import PlaygroundSupport
 
 // Create a new canvas
-let canvas = Canvas(width: 300, height: 500)
+let canvas = Canvas(width: 600, height: 500)
+// Create a blue background
+canvas.borderColor = Color.blue
+canvas.fillColor = Color.init(hue: 200, saturation: 50, brightness: 100, alpha: 100)
+canvas.drawRectangle(centreX: 0, centreY: 0, width: 10000, height: 1200)
 
-// Draw a circle at the origin with radius of 50 pixels
-canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 50)
+//create circle for sun
+canvas.fillColor = Color.yellow
+canvas.borderColor = Color.yellow
+canvas.drawEllipse(centreX: 0, centreY: 500,
+    width: 200, height: 200)
 
-// Show where the origin is
-canvas.drawAxes()
-
-// Draw an ellipse in a different color at the centre of the canvas
-canvas.fillColor = Color.green
-canvas.drawEllipse(centreX: 150, centreY: 250, width: 50, height: 100)
-
-// Add a rectangle to top of the screen
-canvas.fillColor = Color.red
-canvas.drawRectangle(centreX: 150, centreY: 400, width: 100, height: 50)
+//clouds
+canvas.fillColor = Color.white
+canvas.borderColor = Color.blue
+canvas.drawEllipse(centreX: 550, centreY: 500, width: 150, height: 150)
+canvas.drawEllipse(centreX: 550, centreY: 520, width: 150, height: 150)
 
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
