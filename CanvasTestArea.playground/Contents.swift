@@ -35,9 +35,9 @@ canvas.drawEllipse(centreX: 0, centreY: 500,
 
 //clouds
 canvas.fillColor = Color.white
-canvas.borderColor = Color.blue
+canvas.borderColor = Color.white
 canvas.drawEllipse(centreX: 550, centreY: 500, width: 150, height: 150)
-canvas.drawEllipse(centreX: 550, centreY: 520, width: 150, height: 150)
+canvas.drawEllipse(centreX: 600, centreY: 400, width: 150, height: 150)
 
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
