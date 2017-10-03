@@ -30,7 +30,7 @@ canvas.drawRectangle(centreX: 0, centreY: 0, width: 10000, height: 1200)
 
 canvas.drawAxes()
 
-//rays
+// YELLOW rays
 canvas.defaultLineWidth = 5
 canvas.lineColor = Color.yellow
 canvas.borderColor = Color.orange
@@ -49,6 +49,22 @@ canvas.drawLine(fromX: 0, fromY: 500, toX: 200, toY: 0)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 100, toY: 0)
 canvas.drawLine(fromX: 0, fromY: 500, toX: 0, toY: 0)
 
+//ORANGE RAYS
+
+canvas.defaultLineWidth = 4
+canvas.lineColor = Color.orange
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 450 )
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 350 )
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 250 )
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 150 )
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 50 )
+canvas.drawLine(fromX: 0, fromY: 500, toX: 550, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 450, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 350, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 250, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 150, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 50, toY: 0)
+
 //create circle for sun
 canvas.fillColor = Color.yellow
 canvas.borderColor = Color.yellow
@@ -60,6 +76,22 @@ canvas.fillColor = Color.white
 canvas.borderColor = Color.white
 canvas.drawEllipse(centreX: 550, centreY: 500, width: 150, height: 150)
 canvas.drawEllipse(centreX: 600, centreY: 400, width: 150, height: 150)
+
+//raibow
+canvas.drawShapesWithFill = false
+canvas.borderColor = Color.red
+canvas.drawEllipse(centreX: 300, centreY: 0, width: 600, height: 500, borderWidth: 25)
+canvas.borderColor = Color.orange
+canvas.drawEllipse(centreX: 300, centreY: 0, width: 550, height: 450, borderWidth: 25)
+canvas.borderColor = Color.yellow
+canvas.drawEllipse(centreX: 300, centreY: 0, width: 500, height: 400, borderWidth: 25)
+canvas.borderColor = Color.green
+canvas.drawEllipse(centreX: 300, centreY: 0, width: 450, height: 350, borderWidth: 25)
+canvas.borderColor = Color.blue
+canvas.drawEllipse(centreX: 300, centreY: 0, width: 400, height: 300, borderWidth: 25)
+canvas.borderColor = Color.purple
+canvas.drawEllipse(centreX: 300, centreY: 0, width: 350, height: 250, borderWidth: 25)
+
 
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
